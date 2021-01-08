@@ -9,9 +9,10 @@ on:
         default: 'https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_30MB.mp4'
 
 jobs:
-  build:
+  build:l
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt update
       - run: sudo apt install ffmpeg wget
 
       - name: Youtube Dl Setup
